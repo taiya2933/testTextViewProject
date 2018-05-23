@@ -19,10 +19,12 @@ public class A_Activity extends BaseActivity {
         setContentView(R.layout.activity_a);
     }
 
+    
     @Override
     protected void initView(@Nullable Bundle bundle) {
         Log.e("lk_chen", "result==" + "执行了么------------"+"initView");
     }
+
 
     @Override
     protected void initData() {
@@ -33,6 +35,7 @@ public class A_Activity extends BaseActivity {
     protected void initEvent() {
         Log.e("lk_chen", "result==" + "执行了么------------"+"initEvent");
     }
+
 
     public void tv_onclick(View view) {
         startActivity(new Intent(this, B_Activity.class));
